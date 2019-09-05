@@ -6,23 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>test4 | 铁憨憨的博客</title>
+  <title>hexo结合github搭建个人博客 | 铁憨憨的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="asdasdasdasasdsa  asd asdasd asdasd asd">
+  <meta name="description" content="#前言 ##Hexo简介  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test4">
+<meta property="og:title" content="hexo结合github搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2019/09/04/test4/index.html">
 <meta property="og:site_name" content="铁憨憨的博客">
-<meta property="og:description" content="asdasdasdasasdsa  asd asdasd asdasd asd">
+<meta property="og:description" content="#前言 ##Hexo简介  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/09/04/test4/a.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/04/test4/3.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/test4/hexoInit.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/test4/hexoNew.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/test4/hexoS.png">
 <meta property="og:updated_time" content="2019-09-04T01:53:10.618Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test4">
-<meta name="twitter:description" content="asdasdasdasasdsa  asd asdasd asdasd asd">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/04/test4/a.png">
+<meta name="twitter:title" content="hexo结合github搭建个人博客">
+<meta name="twitter:description" content="#前言 ##Hexo简介  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/04/test4/hexoInit.png">
   
     <link rel="alternative" href="/atom.xml" title="铁憨憨的博客" type="application/atom+xml">
   
@@ -165,7 +166,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      test4
+      hexo结合github搭建个人博客
     </h1>
   
 
@@ -178,14 +179,71 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>asdasdasdasasdsa</p>
-<p><img src="/2019/09/04/test4/a.png" alt="测试图片"></p>
-<p>asd asdasd asdasd asd </p>
+        <p>#前言</p>
+<p>##Hexo简介</p>
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
 <a id="more"></a>
 
-<p>asd as dasd asas dasd asdas d</p>
-<p>asd asd asd ads d</p>
-<p><img src="/2019/09/04/test4/3.png" alt="测试2"></p>
+<p>##github page简介</p>
+<blockquote>
+<p>github page是github为每个github账户免费开的静态网站，用户创建了github page后相当于有了自己的站点，然后就可以将hexo生成的文件，放在这个站点上面被别人访问。</p>
+</blockquote>
+<p>#目录</p>
+<p>##一 基本原理 </p>
+<p>##二 准备工作</p>
+<p>##三 本地搭建hexo</p>
+<ol>
+<li>下载安装hexo</li>
+<li>初始化生成hexo项目</li>
+<li>新建一篇文章</li>
+<li>解析生成文章的md文件，并且开启本地预览服务  </li>
+</ol>
+<p>##四 在github上创建github page</p>
+<p>##五 配置SSH key</p>
+<p>##六 配置hexo部署到github上实现访问</p>
+<hr>
+<p>##一 基本原理</p>
+<p>由于github pages存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的就是将这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。</p>
+<p>##二 准备工作</p>
+<p>###着手前你要知道</p>
+<p>安装了git、node.js、npm，并且了解相关知识。</p>
+<p>###所需环境</p>
+<p>window系统</p>
+<p>git</p>
+<p>node.js</p>
+<p>##三 本地搭建hexo</p>
+<ol>
+<li>下载安装hexo</li>
+</ol>
+<p>npm install -g hexo</p>
+<ol start="2">
+<li>初始化生成hexo项目</li>
+</ol>
+<p>新建一个存放hexo的文件夹，取名为firstHexo，在这个文件夹上右键git bash here打开git命令行，输入</p>
+<p>$ hexo init</p>
+<p>firstHexo文件夹就会生成hexo相关文件，如下图</p>
+<p><img src="/2019/09/04/test4/hexoInit.png" alt="hexo初始化"></p>
+<ol start="3">
+<li>新建一篇文章，输入</li>
+</ol>
+<p>$ hexo new “第一篇文章”</p>
+<p>然后就会在source目录下生成我们文章的md文件，如下图</p>
+<p><img src="/2019/09/04/test4/hexoNew.png" alt="生成的md文件"></p>
+<ol start="4">
+<li>解析生成文章的md文件，并且开启本地预览服务</li>
+</ol>
+<p>然后我们输入</p>
+<p>$ hexo g//将之前的md文件转换为静态文件</p>
+<p>最后我们开启本地预览服务</p>
+<p>$ hexo s//开启本地预览</p>
+<p>在浏览器中输入<a href="http://localhost:4000，我们就能在访问到我们刚刚建立的文章，如下图" target="_blank" rel="noopener">http://localhost:4000，我们就能在访问到我们刚刚建立的文章，如下图</a></p>
+<p><img src="/2019/09/04/test4/hexoS.png" alt="本地预览"></p>
+<p>注意：启动服务过程中,git命令行按住ctrl+c可以停止hexo服务</p>
+<p>在github上创建github page</p>
+<p>配置ssh key</p>
+<p>将hexo于github  page联系起来</p>
 
       
 
