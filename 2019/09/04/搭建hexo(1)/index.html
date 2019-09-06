@@ -6,19 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>test2 | 铁憨憨的博客</title>
+  <title>hexo结合github搭建个人博客(1) | 铁憨憨的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="22222222什么鬼">
+  <meta name="description" content="前言Hexo简介 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test2">
-<meta property="og:url" content="http://yoursite.com/2019/09/03/test2/index.html">
+<meta property="og:title" content="hexo结合github搭建个人博客(1)">
+<meta property="og:url" content="http://yoursite.com/2019/09/04/搭建hexo(1)/index.html">
 <meta property="og:site_name" content="铁憨憨的博客">
-<meta property="og:description" content="22222222什么鬼">
+<meta property="og:description" content="前言Hexo简介 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-03T14:23:24.350Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/hexoInit.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/hexoNew.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/hexoS.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/%E4%B8%8B%E8%BD%BDyilia%E4%B8%BB%E9%A2%98.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E5%90%8E.png">
+<meta property="og:updated_time" content="2019-09-06T03:17:41.154Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test2">
-<meta name="twitter:description" content="22222222什么鬼">
+<meta name="twitter:title" content="hexo结合github搭建个人博客(1)">
+<meta name="twitter:description" content="前言Hexo简介 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/04/搭建hexo(1)/hexoInit.png">
   
     <link rel="alternative" href="/atom.xml" title="铁憨憨的博客" type="application/atom+xml">
   
@@ -154,27 +161,76 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-test2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-搭建hexo(1)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      test2
+      hexo结合github搭建个人博客(1)
     </h1>
   
 
         
-        <a href="/2019/09/03/test2/" class="archive-article-date">
-  	<time datetime="2019-09-03T01:52:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
+        <a href="/2019/09/04/搭建hexo(1)/" class="archive-article-date">
+  	<time datetime="2019-09-04T01:46:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>22222222什么鬼</p>
+        <h1><span id="前言">前言</span></h1><h2><span id="hexo简介">Hexo简介</span></h2><blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2><span id="github-page简介">github page简介</span></h2><blockquote>
+<p>github page是github为每个github账户免费开的静态网站，用户创建了github page后相当于有了自己的站点，然后就可以将hexo生成的文件，放在这个站点上面被别人访问。</p>
+</blockquote>
+<h2><span id="一-基本原理">一 基本原理</span></h2><p>由于github pages存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的就是将这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。</p>
+<h2><span id="二-准备工作">二 准备工作</span></h2><p><strong>着手前你要知道</strong></p>
+<p>安装了git、node.js、npm，并且了解相关知识。</p>
+<p><strong>所需环境</strong></p>
+<p>window系统</p>
+<p>git</p>
+<p>node.js</p>
+<h2><span id="三-本地搭建hexo">三 本地搭建hexo</span></h2><p><strong>下载安装hexo</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p><strong>初始化生成hexo项目</strong></p>
+<p> 新建一个存放hexo的文件夹，取名为firstHexo，在这个文件夹上右键git bash here打开git命令行，输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p> firstHexo文件夹就会生成hexo相关文件，如下图</p>
+<p> <img src="/2019/09/04/搭建hexo(1)/hexoInit.png" alt="hexo初始化"></p>
+<p><strong>新建一篇文章，输入</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"第一篇文章"</span></span><br></pre></td></tr></table></figure>
+
+<p> 然后就会在source目录下生成我们文章的md文件，如下图</p>
+<p> <img src="/2019/09/04/搭建hexo(1)/hexoNew.png" alt="生成的md文件"></p>
+<p><strong>解析生成文章的md文件，并且开启本地预览服务</strong></p>
+<p> 然后我们输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g//将之前的md文件转换为静态文件</span><br></pre></td></tr></table></figure>
+
+<p> 最后我们开启本地预览服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s//开启本地预览</span><br></pre></td></tr></table></figure>
+
+<p> 在浏览器中输入<code>http://localhost:4000</code>，我们就能在访问到我们刚刚建立的文章，如下图</p>
+<p>  <img src="/2019/09/04/搭建hexo(1)/hexoS.png" alt="本地预览"></p>
+<p> 注意：启动服务过程中,git命令行按住ctrl+c可以停止hexo服务</p>
+<h2><span id="修改主题">修改主题</span></h2><p>既然默认主题很丑，那我们别的不做，首先来替换一个好看点的主题。这是 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题</a>。</p>
+<p>个人比较喜欢的2个主题：<a href="https://github.com/pinggod/hexo-theme-jekyll" target="_blank" rel="noopener">hexo-theme-jekyll</a> 和 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">hexo-theme-yilia</a>。</p>
+<p>在hexo文件夹下点击j进入theme文件夹，下载想要的主题，输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure>
+
+<p>下载后如图所示</p>
+<p><img src="/2019/09/04/搭建hexo(1)/%E4%B8%8B%E8%BD%BDyilia%E4%B8%BB%E9%A2%98.png" alt="下载yilia主题"></p>
+<p>修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: hexo-theme-yilia</code>，然后重新执行<code>hexo g</code>来重新生成。</p>
+<p>最后访问，如图所示</p>
+<p><img src="/2019/09/04/搭建hexo(1)/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E5%90%8E.png" alt="修改主题后"></p>
+<p>至此，我们已经在本地搭建好了hexo博客，下一篇介绍如何将hexo上传至github page。</p>
 
       
 
@@ -204,6 +260,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -254,7 +321,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/03/test2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/04/搭建hexo(1)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,25 +333,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2019/09/04/test4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo结合github搭建个人博客
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/09/02/test1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo结合github搭建自己的个人博客</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
