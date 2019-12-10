@@ -161,6 +161,102 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux上安装单机版redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/09/linux上安装单机版redis/">linux上安装单机版redis</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/09/linux上安装单机版redis/" class="archive-article-date">
+  	<time datetime="2019-12-09T13:28:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Redis介绍"><a href="#Redis介绍" class="headerlink" title="Redis介绍"></a>Redis介绍</h2><blockquote>
+<p>redis是非关系型数据库，即NoSql数据库</p>
+<p>存储的数据模型是key-value</p>
+<p>特点是访问速度快，可以作为缓存使用</p>
+<p>Redis把数据存放到内存中，内存的读写速度比硬盘的读写速度快</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2019/12/09/linux上安装单机版redis/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">redis</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/redis//" class="article-tag-list-link color1">redis</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/09/linux上安装单机版redis/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-linux常用命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -181,148 +277,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2><span id="一-基本命令重点">一、基本命令【重点】</span></h2><h3><span id="1-切换目录">1. 切换目录</span></h3><blockquote>
+        <h2 id="一、基本命令【重点】"><a href="#一、基本命令【重点】" class="headerlink" title="一、基本命令【重点】"></a>一、基本命令【重点】</h2><h3 id="1-切换目录"><a href="#1-切换目录" class="headerlink" title="1. 切换目录"></a>1. 切换目录</h3><blockquote>
 <p>和windows 基本一样</p>
 </blockquote>
 <p><code>cd ..</code>  回到上一级目录</p>
 <p><code>cd xxx</code>  进去子级目录， 如果是 <code>cd usr</code> 就表示进去 当前的子级usr目录 </p>
 <p><code>cd /</code> 表示回到根目录  ， <code>cd ~</code> 表示进入root目录</p>
-<h3><span id="2-显示文件夹内容">2. 显示文件夹内容</span></h3><p><code>ls</code>  普通显示文件夹内容。只显示名称，没有其他信息</p>
-<p><code>ls -l</code>  显示的内容更加详细， 有时间、 大小…</p>
-<p><code>ls -a</code> 显示所有内容， 包含 . 文件</p>
-<p><code>ls -al</code> 和前面两个组合起来，就是显示所有文件，并且详细的显示</p>
-<p><code>ll</code>  其实就是 <code>ls -l</code> 的简写</p>
-<h3><span id="3-操作目录">3. 操作目录</span></h3><ul>
-<li>添加目录</li>
-</ul>
-<p><code>mkdir xxx</code>  生成目录 xxx  如： <code>mkdir  heima26</code></p>
-<ul>
-<li>修改目录名称</li>
-</ul>
-<p><code>mv aa bb</code> 修改文件夹名称， 把aa这个名字改成 bb</p>
-<ul>
-<li>删除目录</li>
-</ul>
-<p><code>rm -r xxx</code> 删除这个目录，但是会询问是否删除</p>
-<p><code>rm -rf xxx</code> 删除这个目录，即便里面有子目录也删除，并且不会询问。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-r : 对应删除目录</span><br><span class="line">-f : 强制删除</span><br><span class="line">如果要删除的东西是一个目录，必须要带上 -r , 否则无法删除</span><br></pre></td></tr></table></figure>
-
-<h3><span id="4-操作文件">4. 操作文件</span></h3><ul>
-<li>添加文件</li>
-</ul>
-<p><code>touch aa.txt</code>  : 生成一个文件 aa.txt</p>
-<p>当然生成文件也还可以用另外一个命令 , <code>vi | vim</code>     如：<code>vi  bb.txt</code> , 但是这两个命令，更多的是用来编辑文件内容的。 </p>
-<ul>
-<li>删除文件</li>
-</ul>
-<blockquote>
-<p>其实不用记太多，就记得它和删除文件夹是一样的命令即可。</p>
-</blockquote>
-<p><code>rm -rf aa.txt</code> :  强制删除 aa.txt</p>
-<ul>
-<li>查看文件内容</li>
-</ul>
-<p><code>cat aa.txt</code> : 一次性显示所有内容</p>
-<p><code>more aa.txt</code> : 分页显示内容</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">回车就是看下一行</span><br><span class="line">空格是看下一页</span><br><span class="line">B 看上一页</span><br><span class="line">如果不想看了。 点击q 退出查看</span><br></pre></td></tr></table></figure>
-
-<p><code>less -mN aa.txt</code> : 分页显示内容  ，和上面的more 有点区别就是 多了行号 （有点像是<code>more</code>的升级版）</p>
-<p><code>tail aa.txt</code>  只查看文件的末尾内容，适合查看日志文件</p>
-<ul>
-<li>查找有没有该文件</li>
-</ul>
-<p><code>find -name aa.txt</code> : 在当前目录中查找是否有该aa.txt文件</p>
-<ul>
-<li>拷贝文件</li>
-</ul>
-<p><code>cp aa.txt  doc</code> : 拷贝aa.txt 到当前的子目录 doc里面去</p>
-<p><code>cp aa.txt /usr/local/heima</code> : 拷贝当前这个文件到 /usr/local/heima</p>
-<ul>
-<li>剪切文件</li>
-</ul>
-<p><code>mv aa.txt  doc</code> : 剪切，其实就是移动文件到doc目录去。</p>
-<ul>
-<li>修改文件名</li>
-</ul>
-<blockquote>
-<p>和以前一样  mv aa.txt bb.txt</p>
-</blockquote>
-<h2><span id="二-压缩和解压缩重点">二、压缩和解压缩（重点）</span></h2><h3><span id="1-压缩">1. 压缩</span></h3><p><code>tar</code> 用来压缩和解压缩</p>
-<p>linux系统里面打包和压缩是分开来说的。以前windows说的打包（集中到一个文件，并且压缩）linux下面是分开来的，打包是打包，压缩是压缩</p>
-<p><code>tar -cvf 打包后的名字   被打包的文件...</code>  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如:  tar -cvf  aa.tar aa.txt bb.txt  : 把aa.txt 和 bb.txt 打包成一个文件 , 文件名叫做 aa.tar</span><br><span class="line">linux下面的打包后缀一般都叫做 tar</span><br></pre></td></tr></table></figure>
-
-<p>如果想打包并且压缩，那么使用下面的命令</p>
-<p><code>tar -zcvf  打包后的名字   被打包的文件...</code> </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如:  tar -zcvf  aa.tar.gz aa.txt bb.txt  : 把aa.txt 和 bb.txt 打包且压缩成一个文件 ，文件名字叫做aa.tar.gz 。  以后看到文件的后缀是.tar.gz 就知道这个文件一般是给linux系统使用的压缩文件。</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">参数解释：</span><br><span class="line">z : gzip  代表使用gzip压缩算法</span><br><span class="line">c : create 生成文件</span><br><span class="line">v : verbose 显示详情，表示哪个文件被打包了</span><br><span class="line">f : file 指定被打包的文件</span><br></pre></td></tr></table></figure>
-
-<h3><span id="2-解压缩">2. 解压缩</span></h3><p><code>tar -zxvf aa.tar.gz</code> : 解压这个压缩包的内容到当前目录</p>
-<p><code>tar -zxvf aa.tar.gz  -C /usr/local/heima27</code> : 解压这个文件到 /usr/local/heima27  文件夹里面注意，这是大写的 -C</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">参数解释：</span><br><span class="line">x : extract  解压缩的意思</span><br><span class="line">C  : Change Directory  改变解压缩的目录</span><br></pre></td></tr></table></figure>
-
-<h2><span id="三-文档编辑命令vi-vim重点">三、文档编辑命令（vi | vim）【重点】</span></h2><ol>
-<li>输入 vi | vim  aa.txt</li>
-</ol>
-<blockquote>
-<p>进入文件内容，目前处于一般模式，不允许编辑</p>
-</blockquote>
-<ol start="2">
-<li>点击 i  | a  | o</li>
-</ol>
-<blockquote>
-<p>一般都是点击i （insert） ，现在处于编辑模式 ，可以写东西了。</p>
-</blockquote>
-<ol start="3">
-<li>写完之后，想退出。</li>
-</ol>
-<blockquote>
-<p>先点击esc 键盘上的左上角那个键位， 现在变成了一般模式</p>
-</blockquote>
-<ol start="4">
-<li>变到底行模式退出</li>
-</ol>
-<blockquote>
-<p>输入 : wq    保存切退出   w —就是 write写入的意思</p>
-<p>输入  :q!   不保存，强制退出 </p>
-</blockquote>
-<h2><span id="四-其他命令了解">四、其他命令【了解】</span></h2><ul>
-<li>显示工作目录</li>
-</ul>
-<p><code>pwd</code>    显示当前的工作位置</p>
-<ul>
-<li>查看进程信息</li>
-</ul>
-<p><code>ps -ef</code>  查看所有进程，并且显示完整的信息</p>
-<ul>
-<li>结束进程</li>
-</ul>
-<p><code>kill 进程id</code>  </p>
-<ul>
-<li>搜索命令</li>
-</ul>
-<p><code>grep aa bb.txt</code>  在bb.txt 中查找字符串aa</p>
-<ul>
-<li>管道命令</li>
-</ul>
-<p><code>|</code>  : 前面的结果作为后面命令执行的依据</p>
-<p><code>ps -ef|grep aa</code>  ： 查询所有进程，但是只搜索显示进程含有 aa字符串的进程</p>
-<ul>
-<li>查看IP地址</li>
-</ul>
-<p><code>ifconfig</code>  : 和windows不一样</p>
-<ul>
-<li>重启</li>
-</ul>
-<p><code>reboot</code> : 重启</p>
-<ul>
-<li>关机</li>
-</ul>
-<p><code>halt</code> : 立刻关机</p>
-<h2><span id="五-权限命令">五、权限命令</span></h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">linux系统对文件的访问都有明确的权限控制。如：</span><br><span class="line"></span><br><span class="line">-rwxrw-r--  aa.txt   </span><br><span class="line"></span><br><span class="line">第一个- 表示文件</span><br><span class="line">rw-  当前用户的操作权限</span><br><span class="line">r--  同组用户的操作权限</span><br><span class="line">r--  其他组的用户操作权限</span><br><span class="line"></span><br><span class="line">这其实表示当前用户对aa.txt具有可读可写可执行前悬， 同组的其他用户具有读写权限</span><br><span class="line">其他组的用户具有只读权限</span><br><span class="line"></span><br><span class="line">权限可以修改的。</span><br><span class="line"></span><br><span class="line">chmod u=rwx,g=rwx,o=rwx  aa.txt   修改aa.txt 的权限为 当前用户，同组用户，其他组用户 ，都具有可读可写可执行权限。 chmod 其实是 change mode 的缩写</span><br><span class="line"></span><br><span class="line">-rwx rwx rwx . 其实是能够对应二进制的 111，  转换成十进制的话是 421 421 421  刚好是777</span><br><span class="line"></span><br><span class="line">chmod 777 等同于上面的命令</span><br></pre></td></tr></table></figure>
-
-
+        
+          <a class="article-more-a" href="/2019/12/09/linux常用命令/#more">more >></a>
+        
       
 
       
@@ -342,6 +305,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -1020,7 +994,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oracle教程</a>
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1028,7 +1002,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
+                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oracle教程</a>
               </li>
              
               <li class="article-tag-list-item">
